@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Talk on git : Notes from my talk on git in a PLUGIN session" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Talk on git</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/amjd/git-talk">View on GitHub</a>
+
+          <h1 id="project_title">Talk on git</h1>
+          <h2 id="project_tagline">Notes from my talk on git in a PLUGIN session</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/amjd/git-talk/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/amjd/git-talk/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="version-control" class="anchor" href="#version-control"><span class="octicon octicon-link"></span></a>Version Control</h1>
+
+<blockquote>
+<p>Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later.</p>
+</blockquote>
+
+<h1>
+<a name="git---definition" class="anchor" href="#git---definition"><span class="octicon octicon-link"></span></a>git - definition</h1>
+
+<p>The Oxford Advance Learner's Dictionary defines git as,</p>
+
+<p>git n. /ɡɪt/ A stupid or unpleasant man.</p>
+
+<p>:D</p>
+
+<h1>
+<a name="git-goals" class="anchor" href="#git-goals"><span class="octicon octicon-link"></span></a>git goals</h1>
+
+<ul>
+<li>Speed</li>
+<li>Simple design</li>
+<li>Strong support for non-linear development (thousands of parallel branches)</li>
+<li>Fully distributed</li>
+<li>Able to handle large projects like the Linux kernel efficiently (speed and data size)</li>
+</ul><h1>
+<a name="git-workflow" class="anchor" href="#git-workflow"><span class="octicon octicon-link"></span></a>git workflow</h1>
+
+<p>The basic Git workflow goes something like this:</p>
+
+<ul>
+<li>You modify files in your working directory.</li>
+<li>You stage the files, adding snapshots of them to your staging area.</li>
+<li>You do a commit, which takes the files as they are in the staging area and stores that snapshot permanently to your Git directory.</li>
+</ul><p>If a particular version of a file is in the git directory, it’s considered committed. If it’s modified but has been added to the staging area, it is staged. And if it was changed since it was checked out but has not been staged, it is modified.</p>
+
+<h1>
+<a name="git-commands" class="anchor" href="#git-commands"><span class="octicon octicon-link"></span></a>git commands</h1>
+
+<ul>
+<li><code>git init</code></li>
+<li><code>git add</code></li>
+<li><code>git commit</code></li>
+<li><code>git branch</code></li>
+<li><code>git checkout</code></li>
+<li><code>git merge</code></li>
+<li><code>git clone</code></li>
+<li><code>git fetch</code></li>
+<li><code>git pull</code></li>
+<li><code>git push</code></li>
+</ul><h1>
+<a name="github-pages" class="anchor" href="#github-pages"><span class="octicon octicon-link"></span></a>GitHub Pages</h1>
+
+<p>Steps to host your website with GitHub Pages:</p>
+
+<ul>
+<li>Make a repository <em>username</em>.github.io on GitHub, with your GitHub username. (Eg, amjd.github.io)</li>
+<li>Clone the repository to your computer by running <code>git clone https://github.com/username/username.github.io.git</code>
+</li>
+<li>Make an index.html file. <code>echo "Hello world!" &gt; index.html</code>
+</li>
+<li>Add untracked files to the stage. <code>git add .</code>
+</li>
+<li>Commit changes, specifying a short commit message. <code>git commit -m 'Initial commit'</code>
+</li>
+<li>Push the changes and your site will be live in a few minutes! :D <code>git push origin master</code>
+</li>
+</ul><h1>
+<a name="sources" class="anchor" href="#sources"><span class="octicon octicon-link"></span></a>Sources</h1>
+
+<ul>
+<li><a href="http://git-scm.com/docs">http://git-scm.com/docs</a></li>
+<li><a href="http://stackoverflow.com">http://stackoverflow.com</a></li>
+</ul><h1>
+<a name="further-reading" class="anchor" href="#further-reading"><span class="octicon octicon-link"></span></a>Further reading</h1>
+
+<ul>
+<li><a href="http://git-scm.com/docs">http://git-scm.com/docs</a></li>
+<li><a href="http://marklodato.github.io/visual-git-guide/index-en.html">http://marklodato.github.io/visual-git-guide/index-en.html</a></li>
+<li><a href="http://rogerdudler.github.io/git-guide/">http://rogerdudler.github.io/git-guide/</a></li>
+<li><a href="http://www.progit.org/book/">http://www.progit.org/book/</a></li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Talk on git maintained by <a href="https://github.com/amjd">amjd</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
